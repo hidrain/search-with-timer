@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-weight: 300;
+    padding: 30px;
+}
+.nav {
+    display: grid;
+    grid-template-rows: 50px max-content max-content 1fr;
+    height: 90vh
+}
+.button { 
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(190, 195, 206);
+    color: rgb(190, 195, 206);
+    cursor: pointer;
+    margin-right: 10px;
+    justify-self: end;
+}
+li {
+    list-style-type: none;
+}
+li:before {
+    color: rgb(230, 89, 167); 
+    content: "•";
+    padding-right: 5px;
+    cursor: pointer;
+}
+.label {
+    color: rgb(230, 89, 167); 
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}

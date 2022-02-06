@@ -1,0 +1,16 @@
+.container {
+    margin-left: 40px;
+    background-color: rgb(229, 235, 247);
+    border-radius: 30px;
+}
+.info_container {
+    display: grid;
+    justify-items: center;
+}
+.info {
+    display: grid;
+    justify-items: center;
+}
+img {
+    width: 400px;
+}

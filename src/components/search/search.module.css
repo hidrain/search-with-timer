@@ -1,0 +1,26 @@
+.search {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.button {
+    border-radius: 0 30px 30px 0;
+    background-color: #fff;
+    border: 1px solid rgb(230, 89, 167);
+    color: rgb(230, 89, 167);
+    cursor: pointer;
+}
+.input {
+    border-radius: 30px 0 0 30px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color: rgb(230, 89, 167);
+    color: #fff;
+}
+.input::placeholder {
+    color: #fff;
+}
