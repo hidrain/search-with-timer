@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { KeyboardEvent, useEffect, useState } from "react"
 import style from './search.module.css'
 
 type SearchProps = {
@@ -14,13 +14,20 @@ export const Search = (props: SearchProps) => {
         setTempSearch(props.value)
     }, [props.value])
 
+    const handleNewSearchKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter' && tempSearch !== '') {
+            props.onSubmit(tempSearch)
+        }
+    }
+
     return (
         <div className={style.search}>
             <input
                 className={style.input}
                 placeholder='Search'
                 value={tempSearch}
-                onChange={(e) => { setTempSearch(e.currentTarget.value) }} />
+                onChange={(e) => { setTempSearch(e.currentTarget.value) }}
+                onKeyPress={handleNewSearchKeyPress} />
             <button
                 className={style.button}
                 onClick={() => {
