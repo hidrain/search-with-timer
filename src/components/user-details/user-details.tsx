@@ -25,11 +25,11 @@ export const UserDetails = ({ user }: UserDetailsProps) => {
         }
     }, [user])
 
-    // useEffect(() => {
-    //     if (seconds < 1) {
-    //         setUserDetails(null)
-    //     }
-    // }, [seconds])
+    useEffect(() => {
+        if (seconds < 1) {
+            setUserDetails(null)
+        }
+    }, [seconds])
 
     return (
         <div className={style.container}>
