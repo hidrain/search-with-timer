@@ -1,3 +1,6 @@
+.users {
+    cursor: pointer;
+}
 .selected {
     color: rgb(230, 89, 167); 
     font-weight: 500;

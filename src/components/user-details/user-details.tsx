@@ -41,7 +41,10 @@ export const UserDetails = ({ user }: UserDetailsProps) => {
                 <div className={style.info}>
                     <img src={userDetails.avatar_url} />
                     <h2>Username: {userDetails.login}</h2>
-                    {userDetails.html_url}
+                    <a href={userDetails.html_url} className={style.link}>
+                        {userDetails.html_url}
+                    </a>
+
                     <div>
                         followers: {userDetails.followers},
                         following: {userDetails.following}

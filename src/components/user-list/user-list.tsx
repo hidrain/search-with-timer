@@ -25,7 +25,7 @@ export const UsersList = (props: UsersListProps) => {
 
     return (
         <div className={style.container}>
-            <ul>
+            <ul className={style.users}>
                 {users
                     .map(u => <li
                         key={u.id}

@@ -23,7 +23,7 @@ export type User = {
 export const Github = () => {
 
     const [selectedUser, setSelectedUser] = useState<SearchUser | null>(null)
-    const [searchTerm, setSearchTerm] = useState('it-kamasutra')
+    const [searchTerm, setSearchTerm] = useState('hidrain')
 
     useEffect(() => {
         console.log('SYNC TAB TITLE')
@@ -44,7 +44,7 @@ export const Github = () => {
                         onSubmit={(value: string) => { setSearchTerm(value) }} />
                     <button
                         className={style.button}
-                        onClick={() => { setSearchTerm('it-kamasutra') }}>
+                        onClick={() => { setSearchTerm('hidrain') }}>
                         Reset
                     </button>
 

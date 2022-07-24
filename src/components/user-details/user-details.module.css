@@ -14,3 +14,7 @@
 img {
     width: 400px;
 }
+.link {
+    text-decoration: none;
+    color: rgb(184, 53, 125); 
+}
